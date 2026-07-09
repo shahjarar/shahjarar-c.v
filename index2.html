@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shahjarar Khan - Professional CV</title>
+<style>
+  :root{
+    --navy:#1c3a5e;
+    --navy-dark:#122a44;
+    --gold:#c9a15a;
+    --paper:#f7f5f1;
+    --ink:#232323;
+    --muted:#6b6b6b;
+    --line:#dcd6ca;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Georgia','Times New Roman',serif;
+    background:var(--paper);
+    color:var(--ink);
+    display:flex;
+    justify-content:center;
+    padding:40px 16px;
+  }
+  .sheet{
+    width:100%;
+    max-width:850px;
+    background:#fff;
+    box-shadow:0 4px 24px rgba(0,0,0,0.08);
+  }
+  .header{
+    background:linear-gradient(135deg,var(--navy),var(--navy-dark));
+    color:#fff;
+    padding:48px 50px 40px;
+    text-align:center;
+  }
+  .photo{
+    width:120px;height:120px;
+    border-radius:50%;
+    border:2px solid var(--gold);
+    margin:0 auto 20px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:14px;color:rgba(255,255,255,0.6);
+    letter-spacing:0.5px;
+  }
+  .header h1{
+    font-size:34px;
+    letter-spacing:1px;
+    font-weight:600;
+  }
+  .header p.role{
+    margin-top:8px;
+    font-size:15px;
+    color:var(--gold);
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+  .body{
+    display:grid;
+    grid-template-columns:230px 1fr;
+  }
+  .sidebar{
+    background:#f0ede6;
+    padding:36px 28px;
+    border-right:1px solid var(--line);
+  }
+  .main{
+    padding:36px 42px;
+  }
+  h2{
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:var(--navy);
+    border-bottom:2px solid var(--gold);
+    padding-bottom:8px;
+    margin-bottom:16px;
+  }
+  .sidebar h2{margin-top:28px;}
+  .sidebar h2:first-child{margin-top:0;}
+  .sidebar p, .sidebar li{
+    font-size:13.5px;
+    line-height:1.7;
+    color:#3a3a3a;
+  }
+  .sidebar strong{display:block;color:var(--navy);font-size:12.5px;text-transform:uppercase;letter-spacing:0.5px;margin-top:10px;}
+  .sidebar ul{list-style:none;}
+  .sidebar li{margin-bottom:6px;}
+  .skill-bar{
+    height:6px;background:var(--line);border-radius:3px;margin:4px 0 12px;overflow:hidden;
+  }
+  .skill-bar span{
+    display:block;height:100%;background:var(--navy);
+  }
+  .main section{margin-bottom:30px;}
+  .main p{
+    font-size:14.5px;
+    line-height:1.75;
+    color:#3a3a3a;
+  }
+  .entry{margin-bottom:20px;}
+  .entry-top{
+    display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;
+  }
+  .entry-title{font-size:16px;font-weight:700;color:var(--ink);}
+  .entry-sub{font-size:13.5px;color:var(--muted);font-style:italic;}
+  .entry-date{font-size:12.5px;color:var(--gold);font-weight:700;letter-spacing:0.5px;}
+  .entry ul{margin-top:8px;padding-left:18px;}
+  .entry li{font-size:13.8px;line-height:1.7;color:#3a3a3a;margin-bottom:4px;}
+
+  @media print{
+    body{padding:0;background:#fff;}
+    .sheet{box-shadow:none;}
+  }
+  @media (max-width:640px){
+    .body{grid-template-columns:1fr;}
+    .sidebar{border-right:none;border-bottom:1px solid var(--line);}
+    .header{padding:36px 24px;}
+    .main{padding:28px 24px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+
+  <div class="header">
+    <div class="photo">Photo</div>
+    <h1>Shahjarar Khan</h1>
+    <p class="role">Your Job Title Here</p>
+  </div>
+
+  <div class="body">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <h2>Contact</h2>
+      <p><strong>Phone</strong>+92 3XX XXXXXXX</p>
+      <p><strong>Email</strong>shahjarar@email.com</p>
+      <p><strong>Address</strong>City, Pakistan</p>
+      <p><strong>Nationality</strong>Pakistani</p>
+
+      <h2>Personal Details</h2>
+      <p><strong>Father's Name</strong>_________________</p>
+      <p><strong>Date of Birth</strong>DD / MM / YYYY</p>
+      <p><strong>Marital Status</strong>_________________</p>
+      <p><strong>CNIC</strong>_________________</p>
+
+      <h2>Skills</h2>
+      <p>Skill One</p>
+      <div class="skill-bar"><span style="width:90%"></span></div>
+      <p>Skill Two</p>
+      <div class="skill-bar"><span style="width:80%"></span></div>
+      <p>Skill Three</p>
+      <div class="skill-bar"><span style="width:70%"></span></div>
+
+      <h2>Languages</h2>
+      <ul>
+        <li>Urdu — Native</li>
+        <li>English — Fluent</li>
+      </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+      <section>
+        <h2>Profile Summary</h2>
+        <p>
+          Write 2–3 lines here about who you are, your years of experience, and what you bring to the role. For example: "Motivated and detail-oriented professional with a background in ___, seeking to contribute skills in ___ to a growth-focused organization."
+        </p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="entry">
+          <div class="entry-top">
+            <span class="entry-title">Degree / Qualification Name</span>
+            <span class="entry-date">Year – Year</span>
+          </div>
+          <div class="entry-sub">Institute / University Name, City</div>
+        </div>
+        <div class="entry">
+          <div class="entry-top">
+            <span class="entry-title">Intermediate / Matriculation</span>
+            <span class="entry-date">Year – Year</span>
+          </div>
+          <div class="entry-sub">College / School Name, City</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Work Experience</h2>
+        <div class="entry">
+          <div class="entry-top">
+            <span class="entry-title">Job Title</span>
+            <span class="entry-date">Month Year – Present</span>
+          </div>
+          <div class="entry-sub">Company Name, City</div>
+          <ul>
+            <li>Key responsibility or achievement one</li>
+            <li>Key responsibility or achievement two</li>
+            <li>Key responsibility or achievement three</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>References</h2>
+        <p>Available upon request.</p>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
